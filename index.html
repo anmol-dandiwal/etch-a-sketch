@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Etch-A-Sketch</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <button id="clearButton">Clear</button>
+
+        <!--Slider for Size of Squares-->
+        <div class="slideContainer">
+            <p id="sliderHeader">Resize</p>
+            <input type="range" min="8" max="64" step="2" value="36" class="slider" id="sizeSlider">
+            <p id="sliderInput">36</p>
+        </div>
+
+        <!--Slider for colour-->
+        <div class="colourSliderContainer">
+            <p id="colourHeader">Colour</p>
+            <input type="range" min="0" max="255" value="0" class="slider" id="redSlider">
+            <input type="range" min="0" max="255" value="0" class="slider" id="greenSlider">
+            <input type="range" min="0" max="255" value="0" class="slider" id="blueSlider">
+            <div id="colourPreview"></div>
+        </div>
+
+        <!--Grid-->
+        <div class="grid"></div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
